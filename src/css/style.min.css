@@ -92,8 +92,13 @@
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
 
+.subheader_btn:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#0d6577), to(#6eb7c5));
+  background: linear-gradient(0deg, #0d6577 0%, #6eb7c5 100%);
+}
+
 .promo {
-  min-height: 800px;
+  min-height: 864px;
   background: url("../img/uber_bg.jpg") center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
@@ -148,6 +153,11 @@
   text-transform: uppercase;
   color: #FFFFFF;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo_btn:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#0d6577), to(#6eb7c5));
+  background: linear-gradient(0deg, #0d6577 0%, #6eb7c5 100%);
 }
 
 .label {
@@ -235,17 +245,17 @@
   line-height: 21px;
 }
 
-.opportunities {
+.mobile {
   min-height: 864px;
   padding: 48px 0 79px 0;
-  background: url("../img/mobile_bg.png") center center/cover no-repeat;
+  background: url("/img/mobile_bg.png") center center/cover no-repeat;
 }
 
-.opportunities .row {
+.mobile .row {
   margin-top: 32px;
 }
 
-.opportunities_item {
+.mobile_item {
   position: relative;
   width: 320px;
   height: 280px;
@@ -254,31 +264,31 @@
   padding-top: 92px;
 }
 
-.opportunities_item_1 {
+.mobile_item_1 {
   background: url("../img/card1.png") center center/cover no-repeat;
 }
 
-.opportunities_item_2 {
+.mobile_item_2 {
   background: url("../img/card2.png") center center/cover no-repeat;
 }
 
-.opportunities_item_3 {
+.mobile_item_3 {
   background: url("../img/card3.png") center center/cover no-repeat;
 }
 
-.opportunities_item_4 {
+.mobile_item_4 {
   background: url("../img/card4.png") center center/cover no-repeat;
 }
 
-.opportunities_item_5 {
+.mobile_item_5 {
   background: url("../img/card5.png") center center/cover no-repeat;
 }
 
-.opportunities_item_6 {
+.mobile_item_6 {
   background: url("../img/card6.png") center center/cover no-repeat;
 }
 
-.opportunities_item_subtitle {
+.mobile_item_subtitle {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -288,7 +298,7 @@
   color: #ffffff;
 }
 
-.opportunities_item_plus {
+.mobile_item_plus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,10 +309,60 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transfotm: translateX(-50%);
   width: 29px;
   height: 29px;
   background: #000000;
   margin: 0 auto;
   border-radius: 100%;
+  cursor: pointer;
+}
+
+.choice {
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 138px 0;
+  background: url("/img/mobile_bg.png") center center/cover no-repeat;
+  z-index: -2;
+}
+
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 1;
+}
+
+.choice_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: -1;
+}
+
+.choice .label_white {
+  color: #212121;
+  background-color: #ffffff;
+}
+
+.choice .title_white {
+  color: #ffffff;
+}
+
+.choice .subtitle_white {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.min.css.map */
